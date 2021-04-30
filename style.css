@@ -17,17 +17,15 @@ header {
 header ul {
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-}
-header ul li {
-  padding: 1vh;
-  padding-top: 2vh;
+  display: flex;
 }
 header ul li:hover {
   background-image: linear-gradient(rgb(46, 41, 78), rgb(57, 53, 87));
 }
 header ul li a {
+  display: block;
+  padding: 1vh;
+  padding-top: 2vh;
   text-decoration: none;
   font-family: "Goldman";
   font-size: 3vh;
@@ -88,15 +86,7 @@ ul {
 }
 
 .title {
+  font-size: 4vh;
   padding-top: 1vh;
   text-align: center;
-}
-
-.title a {
-  font-size: 4vh;
-}
-
-button {
-  width: 100%;
-  height: 100%;
 }
