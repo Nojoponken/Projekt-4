@@ -3,3 +3,9 @@ let health = 100;
 let mood = 100;
 let hunger = 100;
 let thirst = 100;
+
+function updatePage() {
+  document.getElementById("scabbards").innerHTML = scabbards + "¤";
+  document.getElementById("healthBar").style.gridTemplateColumns =
+    health + "%, " + (100 - health) + "%";
+}
