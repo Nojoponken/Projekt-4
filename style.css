@@ -72,21 +72,14 @@ ul {
   margin: 0;
   padding: 0;
 }
-.bar {
-  display: grid;
-  grid-template-columns: 70fr 30fr;
-}
-.full {
-  background-color: rgb(35, 206, 107);
-  padding: 10px;
-}
-.empty {
-  background-color: rgb(247, 247, 249);
-  padding: 10px;
-}
 
 .title {
   font-size: 4vh;
   padding-top: 1vh;
   text-align: center;
+}
+
+label {
+  font-family: "Poppins";
+  color: rgb(35, 206, 107);
 }

@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <script src="game.js" defer></script>
   </head>
   <body>
     <header>
@@ -28,38 +29,26 @@
       <hr />
     </header>
     <main>
-      <section><a href=""></a><a href=""></a><a href=""></a></section>
+      <section><button onclick="updatePage()">Mint scabbard</button></section>
       <aside>
         <img src="images/Proj4Profimg.png" alt="Profilbild" />
-        <p>100¤</p>
+        <p id="scabbards">100¤</p>
         <ul>
-          <li id="healthBar">
-            <p>Health</p>
-            <div class="bar">
-              <div class="full"></div>
-              <div class="empty"></div>
-            </div>
+          <li>
+            <label for="health">Health</label
+            ><progress value="70" max="100" id="health"></progress>
           </li>
-          <li id="happyBar">
-            <p>Happiness</p>
-            <div class="bar">
-              <div class="full"></div>
-              <div class="empty"></div>
-            </div>
+          <li>
+            <label for="mood">Mood</label
+            ><progress id="mood" value="70" max="100"></progress>
           </li>
-          <li id="hungerBar">
-            <p>Fullness</p>
-            <div class="bar">
-              <div class="full"></div>
-              <div class="empty"></div>
-            </div>
+          <li>
+            <label for="hunger">Hunger</label
+            ><progress id="hunger" value="70" max="100"></progress>
           </li>
-          <li id="thirstBar">
-            <p>Quenchedness</p>
-            <div class="bar">
-              <div class="full"></div>
-              <div class="empty"></div>
-            </div>
+          <li>
+            <label for="thirst">Thirst</label
+            ><progress id="thirst" value="70" max="100"></progress>
           </li>
         </ul>
       </aside>

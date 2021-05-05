@@ -6,6 +6,6 @@ let thirst = 100;
 
 function updatePage() {
   document.getElementById("scabbards").innerHTML = scabbards + "¤";
-  document.getElementById("healthBar").style.gridTemplateColumns =
-    health + "fr, " + (100 - health) + "fr";
+  document.querySelector("#healthBar").style.gridTemplateColumns =
+    health + "fr, " + (101 - health) + "fr";
 }
