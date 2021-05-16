@@ -1,60 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Goldman&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <script src="game.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <ul>
-        <li><a class="title" href="index.html">Diruapolis</a></li>
-        <li><a href="restaurant.html">restaurant</a></li>
-        <li><a href="mint.html">minting</a></li>
-        <li><a href="home.html">home</a></li>
-      </ul>
-      <hr />
-    </header>
-    <main>
-      <section><button onclick="updatePage()">Mint scabbard</button></section>
-      <aside>
-        <img src="images/Proj4Profimg.png" alt="Profilbild" />
-        <p id="scabbards">100¤</p>
-        <ul>
-          <li>
-            <label for="health">Health</label
-            ><progress value="70" max="100" id="health"></progress>
-          </li>
-          <li>
-            <label for="mood">Mood</label
-            ><progress id="mood" value="70" max="100"></progress>
-          </li>
-          <li>
-            <label for="hunger">Hunger</label
-            ><progress id="hunger" value="70" max="100"></progress>
-          </li>
-          <li>
-            <label for="thirst">Thirst</label
-            ><progress id="thirst" value="70" max="100"></progress>
-          </li>
-        </ul>
-      </aside>
-    </main>
-    <footer>
-      <p>Kopiera inte 2021</p>
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Main</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Goldman&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="game.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<ul>
+				<li><a class="title" href="index.html">Diruapolis</a></li>
+				<li><a href="restaurant.html">restaurant</a></li>
+				<li><a href="mint.html">minting</a></li>
+				<li><a href="home.html">home</a></li>
+			</ul>
+			<hr />
+		</header>
+		<main>
+			<section><button onclick="AddScabbard()">Mint scabbard</button></section>
+			<aside>
+				<img src="images/Proj4Profimg.png" alt="Profilbild" />
+				<p id="scabbards">0¤</p>
+				<ul>
+					<li>
+						<p id="health">health: 100</p>
+					</li>
+					<li>
+						<p id="mood">mood: 100</p>
+					</li>
+					<li>
+						<p id="hunger">hunger: 100</p>
+					</li>
+					<li>
+						<p id="thirst">thirst: 100</p>
+					</li>
+				</ul>
+			</aside>
+		</main>
+		<footer>
+			<p>Kopiera inte 2021</p>
+		</footer>
+	</body>
 </html>
